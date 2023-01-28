@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Login</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div>
+        <div class="madia container mt-5 p-5 text-center w-50 rounded-2" id="signinDiv">
+            <h3 class="m-5  text-info">Smart Login System</h3>
+            <input type="email" class="form-control m-3" id="signInEmail" placeholder="Email">
+
+            <input type="password" class="form-control m-3" id="signInPass" placeholder="Password">
+            <div class="alert alert-danger m-3 p-0 d-none " id="alertRed" role="alert">
+                Invalid Email or in valid Password
+            </div>
+            <a type="submit" class="btn btn-outline-info form-control m-3 fw-semibold" id="signInButton">login</a>
+            <p class="w-100 text-center text-info">Don't have account? <button
+                    class="fw-semibold bg-transparent  border-0" id="signupBtn">Sign Up</button></p>
+        </div>
+        <div class=" madia container border-2 p-5 text-center mt-5 d-none w-50 " id="signUpDiv">
+            <h3 class="m-5  text-info">Smart Login System</h3>
+            <input type="text" id="signUpName" placeholder="Your Name" class="form-control m-3">
+            <input type="email" id="signUpEmail" class="form-control m-3" placeholder="Your Email">
+            <div class="alert alert-danger m-3 p-0 d-none " id="alertblue" role="alert">
+                Email need to improve
+            </div>
+            <input type="password" id="signUpPassword" class="form-control m-3" placeholder="Password">
+            <div class="alert alert-danger m-3 p-0 d-none " id="alertpass" role="alert">
+                Password need to improve
+            </div>
+            <button type="submit" id="signUpButton" class="btn btn-outline-info form-control m-3  ">Sign
+                Up</button>
+            <p class="w-100 m-auto text-info">You have account? <button class=" border-0  bg-transparent fw-semibold"
+                    id="signInBtn">sign
+                    In</button>
+            </p>
+        </div>
+    </div>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js" type="module"></script>
+</body>
+
+</html>
